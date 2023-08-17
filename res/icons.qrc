@@ -1,0 +1,197 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>unlock.png</file>
+    <file>Overclock.png</file>
+    <file>locked.png</file>
+    <file>Xp_icon.png</file>
+    <file>Class_level_icon.png</file>
+    <file>Datacell_icon.png</file>
+    <file>Barley_bulb_icon.png</file>
+    <file>Credit.png</file>
+    <file>Empty_matrix_core.png</file>
+    <file>Malt_star_icon.png</file>
+    <file>Phazyonite_icon.png</file>
+    <file>Starch_nut_icon.png</file>
+    <file>Yeast_cone_icon.png</file>
+    <file>Bismor_icon.png</file>
+    <file>Bittergem_icon.png</file>
+    <file>Croppa_icon.png</file>
+    <file>Enor_pearl_icon.png</file>
+    <file>Hollomite_icon.png</file>
+    <file>Jadiz_icon.png</file>
+    <file>Magnite_icon.png</file>
+    <file>Umanite_icon.png</file>
+    <file>Perk_points_icon.png</file>
+    <file>Unknown_artifact_icon.png</file>
+    <file>Scrip_04_icon.png</file>
+    <file>DRG_Supporter.png</file>
+    <file>driller.webp</file>
+    <file>engineer.webp</file>
+    <file>gunner.webp</file>
+    <file>resources.webp</file>
+    <file>scout.webp</file>
+    <file>season.webp</file>
+  </qresource>
+  <qresource prefix="overclocks">
+    <file>overclock_icons/A Little More Oomph! Gunner.png</file>
+    <file>overclock_icons/Active Stability System Scout.png</file>
+    <file>overclock_icons/AG Mixture Driller.png</file>
+    <file>overclock_icons/Aggressive Venting Scout.png</file>
+    <file>overclock_icons/AI Stability Engine Scout.png</file>
+    <file>overclock_icons/Armor Break Module Engineer.png</file>
+    <file>overclock_icons/Automated Beam Controller Engineer.png</file>
+    <file>overclock_icons/Automatic Fire Driller.png</file>
+    <file>overclock_icons/Backfeeding Module Gunner.png</file>
+    <file>overclock_icons/Big Bertha Gunner.png</file>
+    <file>overclock_icons/Blistering Necrosis Driller.png</file>
+    <file>overclock_icons/Bodkin Points Scout.png</file>
+    <file>overclock_icons/Bullet Hell Gunner.png</file>
+    <file>overclock_icons/Bullets of Mercy Scout.png</file>
+    <file>overclock_icons/Burning Hell Gunner.png</file>
+    <file>overclock_icons/Carpet Bomber Gunner.png</file>
+    <file>overclock_icons/Chain Hit Driller.png</file>
+    <file>overclock_icons/Chain Hit Gunner.png</file>
+    <file>overclock_icons/Clean Sweep Engineer.png</file>
+    <file>overclock_icons/Combat Mobility Gunner.png</file>
+    <file>overclock_icons/Compact Ammo Scout.png</file>
+    <file>overclock_icons/Compact Feed Mechanism Gunner.png</file>
+    <file>overclock_icons/Compact Feed Valves Driller.png</file>
+    <file>overclock_icons/Compact Mags Gunner.png</file>
+    <file>overclock_icons/Compact Rounds Engineer.png</file>
+    <file>overclock_icons/Compact Shells Scout.png</file>
+    <file>overclock_icons/Composite Casings Gunner.png</file>
+    <file>overclock_icons/Composite Drums Gunner.png</file>
+    <file>overclock_icons/Cryo Bolt Scout.png</file>
+    <file>overclock_icons/Cryo Minelets Scout.png</file>
+    <file>overclock_icons/Custom Casings Scout.png</file>
+    <file>overclock_icons/Cycle Overload Engineer.png</file>
+    <file>overclock_icons/Diffusion Ray Driller.png</file>
+    <file>overclock_icons/Disperser Compound Driller.png</file>
+    <file>overclock_icons/Double Barrel Scout.png</file>
+    <file>overclock_icons/Efficiency Tweaks Engineer.png</file>
+    <file>overclock_icons/Electrifying Reload Scout.png</file>
+    <file>overclock_icons/Electro Minelets Gunner.png</file>
+    <file>overclock_icons/Electrocuting Focus Shots Scout.png</file>
+    <file>overclock_icons/Elephant Rounds Gunner.png</file>
+    <file>overclock_icons/EM Refire Booster Engineer.png</file>
+    <file>overclock_icons/Embedded Detonators Scout.png</file>
+    <file>overclock_icons/Energy Rerouting Driller.png</file>
+    <file>overclock_icons/Eraser Engineer.png</file>
+    <file>overclock_icons/Executioner Engineer.png</file>
+    <file>overclock_icons/Exhaust Vectoring Gunner.png</file>
+    <file>overclock_icons/Experimental Rounds Gunner.png</file>
+    <file>overclock_icons/Explosive Chemical Rounds Engineer.png</file>
+    <file>overclock_icons/Explosive Reload Driller.png</file>
+    <file>overclock_icons/Face Melter Driller.png</file>
+    <file>overclock_icons/Fat Boy Engineer.png</file>
+    <file>overclock_icons/Feedback Loop Engineer.png</file>
+    <file>overclock_icons/Fire Bolt Scout.png</file>
+    <file>overclock_icons/Flow Rate Expansion Driller.png</file>
+    <file>overclock_icons/Fragmentation Missiles Gunner.png</file>
+    <file>overclock_icons/Fuel Stream Diffuser Driller.png</file>
+    <file>overclock_icons/Full Chamber Seal Gunner.png</file>
+    <file>overclock_icons/Gamma Contamination Driller.png</file>
+    <file>overclock_icons/Gas Recycling Scout.png</file>
+    <file>overclock_icons/Gas Rerouting Scout.png</file>
+    <file>overclock_icons/Goo Bomber Special Driller.png</file>
+    <file>overclock_icons/Heat Pipe Driller.png</file>
+    <file>overclock_icons/Heavy Hitter Driller.png</file>
+    <file>overclock_icons/Hellfire Gunner.png</file>
+    <file>overclock_icons/High Voltage Crossover Engineer.png</file>
+    <file>overclock_icons/Hipster Scout.png</file>
+    <file>overclock_icons/Homebrew Powder Driller.png</file>
+    <file>overclock_icons/Homebrew Powder Gunner.png</file>
+    <file>overclock_icons/Homebrew Powder Scout.png</file>
+    <file>overclock_icons/Hoverclock Scout.png</file>
+    <file>overclock_icons/Hydrogen Ion Additive Driller.png</file>
+    <file>overclock_icons/Hyper Propellant Engineer.png</file>
+    <file>overclock_icons/Ice Spear Driller.png</file>
+    <file>overclock_icons/Ice Storm Driller.png</file>
+    <file>overclock_icons/Impact Deflection Scout.png</file>
+    <file>overclock_icons/Improved Thermal Efficiency Driller.png</file>
+    <file>overclock_icons/Inferno Engineer.png</file>
+    <file>overclock_icons/Jet Fuel Homebrew Gunner.png</file>
+    <file>overclock_icons/Jumbo Shells Scout.png</file>
+    <file>overclock_icons/Lead Spray Gunner.png</file>
+    <file>overclock_icons/Lead Storm Gunner.png</file>
+    <file>overclock_icons/Lighter Tanks Driller.png</file>
+    <file>overclock_icons/Light-Weight Cases Engineer.png</file>
+    <file>overclock_icons/Light-Weight Magazines Engineer.png</file>
+    <file>overclock_icons/Light-Weight Rounds Engineer.png</file>
+    <file>overclock_icons/Liquid Cooling System Driller.png</file>
+    <file>overclock_icons/Magic Bullets Gunner.png</file>
+    <file>overclock_icons/Magnetic Cooling Unit Driller.png</file>
+    <file>overclock_icons/Magnetic Pellet Alignment Engineer.png</file>
+    <file>overclock_icons/Mega Power Supply Driller.png</file>
+    <file>overclock_icons/Micro Flechettes Gunner.png</file>
+    <file>overclock_icons/Minelayer System Gunner.png</file>
+    <file>overclock_icons/Mini Shells Engineer.png</file>
+    <file>overclock_icons/Minimal Clips Scout.png</file>
+    <file>overclock_icons/Minimal Magazines Scout.png</file>
+    <file>overclock_icons/Neuro-Lasso Engineer.png</file>
+    <file>overclock_icons/Neurotoxin Payload Gunner.png</file>
+    <file>overclock_icons/Overcharger Driller.png</file>
+    <file>overclock_icons/Overclocked Firing Mechanism Scout.png</file>
+    <file>overclock_icons/Overdrive Booster Engineer.png</file>
+    <file>overclock_icons/Oversized Magazine Driller.png</file>
+    <file>overclock_icons/Overtuned Feed Mechanism Gunner.png</file>
+    <file>overclock_icons/Overtuned Particle Accelerator Scout.png</file>
+    <file>overclock_icons/Pack Rat Engineer.png</file>
+    <file>overclock_icons/Persistent Plasma Driller.png</file>
+    <file>overclock_icons/Plasma Burster Missiles Gunner.png</file>
+    <file>overclock_icons/Plastcrete Catalyst Engineer.png</file>
+    <file>overclock_icons/Quick Fire Scout.png</file>
+    <file>overclock_icons/Re-atomizer Gunner.png</file>
+    <file>overclock_icons/Return to Sender Engineer.png</file>
+    <file>overclock_icons/Rewiring Mod Scout.png</file>
+    <file>overclock_icons/RJ250 Compound Engineer.png</file>
+    <file>overclock_icons/Rocket Barrage Gunner.png</file>
+    <file>overclock_icons/Roll Control Engineer.png</file>
+    <file>overclock_icons/Salvo Module Gunner.png</file>
+    <file>overclock_icons/Seeker Rounds Engineer.png</file>
+    <file>overclock_icons/Shaped Shells Scout.png</file>
+    <file>overclock_icons/Shield Battery Booster Scout.png</file>
+    <file>overclock_icons/Six Shooter Gunner.png</file>
+    <file>overclock_icons/Sludge Blast Driller.png</file>
+    <file>overclock_icons/Snowball Driller.png</file>
+    <file>overclock_icons/Special Powder Scout.png</file>
+    <file>overclock_icons/Spinning Death Engineer.png</file>
+    <file>overclock_icons/Splintering Shells Gunner.png</file>
+    <file>overclock_icons/Sticky Additive Driller.png</file>
+    <file>overclock_icons/Sticky Fuel Driller.png</file>
+    <file>overclock_icons/Stronger Plasma Current Engineer.png</file>
+    <file>overclock_icons/Stuffed Shells Scout.png</file>
+    <file>overclock_icons/Stunner Engineer.png</file>
+    <file>overclock_icons/Super Focus Lens Driller.png</file>
+    <file>overclock_icons/Supercooling Chamber Scout.png</file>
+    <file>overclock_icons/Super-Slim Rounds Engineer.png</file>
+    <file>overclock_icons/The Mole Gunner.png</file>
+    <file>overclock_icons/The Specialist Scout.png</file>
+    <file>overclock_icons/Thermal Exhaust Feedback Scout.png</file>
+    <file>overclock_icons/Thermal Liquid Coolant Scout.png</file>
+    <file>overclock_icons/Thinned Drum Walls Gunner.png</file>
+    <file>overclock_icons/Tranquilizer Rounds Driller.png</file>
+    <file>overclock_icons/Trifork Volley Scout.png</file>
+    <file>overclock_icons/Triple-tech Chambers Gunner.png</file>
+    <file>overclock_icons/Tuned Cooler Driller.png</file>
+    <file>overclock_icons/Turret Arc Engineer.png</file>
+    <file>overclock_icons/Turret EM Discharge Engineer.png</file>
+    <file>overclock_icons/Ultra-Magnetic Coils Gunner.png</file>
+    <file>overclock_icons/Volatile Bullets Gunner.png</file>
+    <file>overclock_icons/Volatile Impact Mixture Driller.png</file>
+    <file>overclock_icons/Volatile Impact Reactor Engineer.png</file>
+    <file>overclock_icons/Well Oiled Machine Engineer.png</file>
+  </qresource>
+  <qresource prefix="promote">
+    <file>600px-Promotion_Tier1_Bronze_Lvl1.png</file>
+    <file>600px-Promotion_Tier1_Bronze_Lvl2.png</file>
+    <file>600px-Promotion_Tier1_Bronze_Lvl3.png</file>
+    <file>Icon_Promotion_StarGold.png</file>
+    <file>Promotion_Tier2_Silver_Lvl1.png</file>
+    <file>Promotion_Tier2_Silver_Lvl2.png</file>
+    <file>Promotion_Tier2_Silver_Lvl3.png</file>
+    <file>Promotion_Tier3_Gold_Lvl1.png</file>
+    <file>Promotion_Tier3_Gold_Lvl2.png</file>
+    <file>Promotion_Tier3_Gold_Lvl3.png</file>
+  </qresource>
+</RCC>

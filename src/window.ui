@@ -1,0 +1,4500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DeepRockGalaticSaveEditor</class>
+ <widget class="QMainWindow" name="DeepRockGalaticSaveEditor">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>997</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Deep Rock Galatic Save Editor</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../res/icons.qrc">
+    <normaloff>:/icons/DRG_Supporter.png</normaloff>:/icons/DRG_Supporter.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(17, 24, 39);
+selection-color: rgb(0, 0, 0);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="Line" name="line_1">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>73</y>
+      <width>1000</width>
+      <height>4</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 156, 0);
+background-color: rgb(255, 156, 0);</string>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>0</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>-11</y>
+      <width>1011</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <item>
+      <widget class="QPushButton" name="resources">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial Black</family>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(17, 24, 39);
+color: rgb(255, 255, 255);
+border: 2px solid rgb(255, 156, 0);</string>
+       </property>
+       <property name="text">
+        <string>RESOURCES</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../res/icons.qrc">
+         <normaloff>:/icons/resources.webp</normaloff>:/icons/resources.webp</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>35</width>
+         <height>35</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="season">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial Black</family>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(17, 24, 39);
+color: rgb(255, 255, 255);
+border: 2px solid rgb(255, 156, 0);</string>
+       </property>
+       <property name="text">
+        <string>SEASON</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../res/icons.qrc">
+         <normaloff>:/icons/season.webp</normaloff>:/icons/season.webp</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="engineer">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial Black</family>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(17, 24, 39);
+color: rgb(255, 255, 255);
+border: 2px solid rgb(255, 156, 0);</string>
+       </property>
+       <property name="text">
+        <string>ENGINEER</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../res/icons.qrc">
+         <normaloff>:/icons/engineer.webp</normaloff>:/icons/engineer.webp</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="driller">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial Black</family>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(17, 24, 39);
+color: rgb(255, 255, 255);
+border: 2px solid rgb(255, 156, 0);</string>
+       </property>
+       <property name="text">
+        <string>DRILLER</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../res/icons.qrc">
+         <normaloff>:/icons/driller.webp</normaloff>:/icons/driller.webp</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="gunner">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial Black</family>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(17, 24, 39);
+color: rgb(255, 255, 255);
+border: 2px solid rgb(255, 156, 0);</string>
+       </property>
+       <property name="text">
+        <string>GUNNER</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../res/icons.qrc">
+         <normaloff>:/icons/gunner.webp</normaloff>:/icons/gunner.webp</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="scout">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial Black</family>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(17, 24, 39);
+color: rgb(255, 255, 255);
+border: 2px solid rgb(255, 156, 0);</string>
+       </property>
+       <property name="text">
+        <string>SCOUT</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../res/icons.qrc">
+         <normaloff>:/icons/scout.webp</normaloff>:/icons/scout.webp</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>50</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>81</y>
+      <width>1000</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="start_page">
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>1000</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Deep Rock Galatic Save Editor</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_22">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>180</y>
+        <width>581</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="lineWidth">
+       <number>1</number>
+      </property>
+      <property name="midLineWidth">
+       <number>0</number>
+      </property>
+      <property name="text">
+       <string>Click 'open file' to select your .sav file 
+
+REMEMBER TO BACKUP YOUR SAVEFILE FIRST!</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+      <property name="margin">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_23">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>60</y>
+        <width>731</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>This is a game save file editor to provide you an easy 
+
+and quick access to in-game resources, overclocks, etc.</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_24">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>360</y>
+        <width>321</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>developed by WayneYellow
+https://github.com/WayneYellow</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="resources_page">
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>998</width>
+        <height>460</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>800</width>
+        <height>460</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0px</string>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>977</width>
+         <height>607</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>800</width>
+         <height>0</height>
+        </size>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <property name="leftMargin">
+         <number>38</number>
+        </property>
+        <property name="rightMargin">
+         <number>44</number>
+        </property>
+        <property name="bottomMargin">
+         <number>11</number>
+        </property>
+        <property name="horizontalSpacing">
+         <number>40</number>
+        </property>
+        <property name="verticalSpacing">
+         <number>11</number>
+        </property>
+        <item row="4" column="1">
+         <widget class="QGroupBox" name="groupBox_7">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>1</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>230</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+border: 0px</string>
+          </property>
+          <property name="title">
+           <string>JADIZ</string>
+          </property>
+          <widget class="QWidget" name="widget_10" native="true">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>30</y>
+             <width>50</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image: url(:/icons/Jadiz_icon.png);
+background-color: rgb(36, 52, 84);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :7px;
+border-top-right-radius : 0px;                  
+border-bottom-left-radius : 7px;
+border-bottom-right-radius : 0px</string>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="jadiz">
+           <property name="geometry">
+            <rect>
+             <x>58</x>
+             <y>30</y>
+             <width>120</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>10</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+font: 75 10pt &quot;Consolas&quot;;
+border-color: rgb(255, 156, 0);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :0px;
+border-top-right-radius : 7px;                  
+border-bottom-left-radius : 0px;
+border-bottom-right-radius : 7px</string>
+           </property>
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::NoButtons</enum>
+           </property>
+           <property name="maximum">
+            <number>268435455</number>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QGroupBox" name="magnite_box">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>1</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>230</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+border: 0px</string>
+          </property>
+          <property name="title">
+           <string>MAGNITE</string>
+          </property>
+          <widget class="QWidget" name="widget_4" native="true">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>30</y>
+             <width>50</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image: url(:/icons/Magnite_icon.png);
+background-color: rgb(36, 52, 84);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :7px;
+border-top-right-radius : 0px;                  
+border-bottom-left-radius : 7px;
+border-bottom-right-radius : 0px</string>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="magnite">
+           <property name="geometry">
+            <rect>
+             <x>58</x>
+             <y>30</y>
+             <width>120</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>10</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+font: 75 10pt &quot;Consolas&quot;;
+border-color: rgb(255, 156, 0);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :0px;
+border-top-right-radius : 7px;                  
+border-bottom-left-radius : 0px;
+border-bottom-right-radius : 7px</string>
+           </property>
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::NoButtons</enum>
+           </property>
+           <property name="maximum">
+            <number>268435455</number>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="label_5">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>230</width>
+            <height>36</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>16</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:rgb(255, 156, 0);</string>
+          </property>
+          <property name="text">
+           <string>MISCELLANEOUS</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QGroupBox" name="groupBox_8">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>1</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>230</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+border: 0px</string>
+          </property>
+          <property name="title">
+           <string>ENOR PEARL</string>
+          </property>
+          <widget class="QWidget" name="widget_11" native="true">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>30</y>
+             <width>50</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image:url(:/icons/Enor_pearl_icon.png);
+background-color: rgb(36, 52, 84);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :7px;
+border-top-right-radius : 0px;                  
+border-bottom-left-radius : 7px;
+border-bottom-right-radius : 0px</string>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="enor">
+           <property name="geometry">
+            <rect>
+             <x>58</x>
+             <y>30</y>
+             <width>120</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>10</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+font: 75 10pt &quot;Consolas&quot;;
+border-color: rgb(255, 156, 0);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :0px;
+border-top-right-radius : 7px;                  
+border-bottom-left-radius : 0px;
+border-bottom-right-radius : 7px</string>
+           </property>
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::NoButtons</enum>
+           </property>
+           <property name="maximum">
+            <number>268435455</number>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QGroupBox" name="groupBox_5">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>1</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>230</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+border: 0px</string>
+          </property>
+          <property name="title">
+           <string>STARCH NUT</string>
+          </property>
+          <widget class="QWidget" name="widget_5" native="true">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>30</y>
+             <width>50</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image: url(:/icons/Starch_nut_icon.png);
+background-color: rgb(36, 52, 84);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :7px;
+border-top-right-radius : 0px;                  
+border-bottom-left-radius : 7px;
+border-bottom-right-radius : 0px</string>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="starch">
+           <property name="geometry">
+            <rect>
+             <x>58</x>
+             <y>30</y>
+             <width>120</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>10</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+font: 75 10pt &quot;Consolas&quot;;
+border-color: rgb(255, 156, 0);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :0px;
+border-top-right-radius : 7px;                  
+border-bottom-left-radius : 0px;
+border-bottom-right-radius : 7px</string>
+           </property>
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::NoButtons</enum>
+           </property>
+           <property name="maximum">
+            <number>268435455</number>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="8" column="2">
+         <widget class="QGroupBox" name="groupBox_4">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>1</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>230</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+border: 0px</string>
+          </property>
+          <property name="title">
+           <string>DATA CELLS</string>
+          </property>
+          <widget class="QWidget" name="widget_19" native="true">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>30</y>
+             <width>50</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image:url(:/icons/Datacell_icon.png);
+background-color: rgb(36, 52, 84);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :7px;
+border-top-right-radius : 0px;                  
+border-bottom-left-radius : 7px;
+border-bottom-right-radius : 0px</string>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="data">
+           <property name="geometry">
+            <rect>
+             <x>58</x>
+             <y>30</y>
+             <width>120</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>10</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+font: 75 10pt &quot;Consolas&quot;;
+border-color: rgb(255, 156, 0);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :0px;
+border-top-right-radius : 7px;                  
+border-bottom-left-radius : 0px;
+border-bottom-right-radius : 7px</string>
+           </property>
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::NoButtons</enum>
+           </property>
+           <property name="maximum">
+            <number>9999</number>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="8" column="3">
+         <widget class="QGroupBox" name="groupBox_17">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>1</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>230</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+border: 0px</string>
+          </property>
+          <property name="title">
+           <string>BLANK CORES</string>
+          </property>
+          <widget class="QWidget" name="widget_20" native="true">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>30</y>
+             <width>50</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image: url(:/icons/Empty_matrix_core.png);
+background-color: rgb(36, 52, 84);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :7px;
+border-top-right-radius : 0px;                  
+border-bottom-left-radius : 7px;
+border-bottom-right-radius : 0px</string>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="core">
+           <property name="geometry">
+            <rect>
+             <x>58</x>
+             <y>30</y>
+             <width>120</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>10</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+font: 75 10pt &quot;Consolas&quot;;
+border-color: rgb(255, 156, 0);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :0px;
+border-top-right-radius : 7px;                  
+border-bottom-left-radius : 0px;
+border-bottom-right-radius : 7px</string>
+           </property>
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::NoButtons</enum>
+           </property>
+           <property name="maximum">
+            <number>999</number>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QGroupBox" name="groupBox_9">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>1</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>230</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+border: 0px</string>
+          </property>
+          <property name="title">
+           <string>UMANITE</string>
+          </property>
+          <widget class="QWidget" name="widget_12" native="true">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>30</y>
+             <width>50</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image:url(:/icons/Umanite_icon.png);
+background-color: rgb(36, 52, 84);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :7px;
+border-top-right-radius : 0px;                  
+border-bottom-left-radius : 7px;
+border-bottom-right-radius : 0px</string>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="umanite">
+           <property name="geometry">
+            <rect>
+             <x>58</x>
+             <y>30</y>
+             <width>120</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>10</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+font: 75 10pt &quot;Consolas&quot;;
+border-color: rgb(255, 156, 0);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :0px;
+border-top-right-radius : 7px;                  
+border-bottom-left-radius : 0px;
+border-bottom-right-radius : 7px</string>
+           </property>
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::NoButtons</enum>
+           </property>
+           <property name="maximum">
+            <number>268435455</number>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>36</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>16</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 156, 0);</string>
+          </property>
+          <property name="text">
+           <string>MINERALS</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QGroupBox" name="groupBox_6">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>1</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>230</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+border: 0px</string>
+          </property>
+          <property name="title">
+           <string>CROPPA</string>
+          </property>
+          <widget class="QWidget" name="widget_9" native="true">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>30</y>
+             <width>50</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image: url(:/icons/Croppa_icon.png);
+background-color: rgb(36, 52, 84);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :7px;
+border-top-right-radius : 0px;                  
+border-bottom-left-radius : 7px;
+border-bottom-right-radius : 0px</string>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="croppa">
+           <property name="geometry">
+            <rect>
+             <x>58</x>
+             <y>30</y>
+             <width>120</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>10</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+font: 75 10pt &quot;Consolas&quot;;
+border-color: rgb(255, 156, 0);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :0px;
+border-top-right-radius : 7px;                  
+border-bottom-left-radius : 0px;
+border-bottom-right-radius : 7px</string>
+           </property>
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::NoButtons</enum>
+           </property>
+           <property name="maximum">
+            <number>268435455</number>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QGroupBox" name="groupBox_10">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>1</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>230</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+border: 0px</string>
+          </property>
+          <property name="title">
+           <string>BISMOR</string>
+          </property>
+          <widget class="QWidget" name="widget_13" native="true">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>30</y>
+             <width>50</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image: url(:/icons/Bismor_icon.png);
+background-color: rgb(36, 52, 84);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :7px;
+border-top-right-radius : 0px;                  
+border-bottom-left-radius : 7px;
+border-bottom-right-radius : 0px</string>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="bismor">
+           <property name="geometry">
+            <rect>
+             <x>58</x>
+             <y>30</y>
+             <width>120</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>10</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+font: 75 10pt &quot;Consolas&quot;;
+border-color: rgb(255, 156, 0);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :0px;
+border-top-right-radius : 7px;                  
+border-bottom-left-radius : 0px;
+border-bottom-right-radius : 7px</string>
+           </property>
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::NoButtons</enum>
+           </property>
+           <property name="maximum">
+            <number>268435455</number>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QGroupBox" name="groupBox_11">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>1</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>230</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+border: 0px</string>
+          </property>
+          <property name="title">
+           <string>YEAST CONE</string>
+          </property>
+          <widget class="QWidget" name="widget_14" native="true">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>30</y>
+             <width>50</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image: url(:/icons/Yeast_cone_icon.png);
+background-color: rgb(36, 52, 84);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :7px;
+border-top-right-radius : 0px;                  
+border-bottom-left-radius : 7px;
+border-bottom-right-radius : 0px</string>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="yeast">
+           <property name="geometry">
+            <rect>
+             <x>58</x>
+             <y>30</y>
+             <width>120</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>10</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+font: 75 10pt &quot;Consolas&quot;;
+border-color: rgb(255, 156, 0);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :0px;
+border-top-right-radius : 7px;                  
+border-bottom-left-radius : 0px;
+border-bottom-right-radius : 7px</string>
+           </property>
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::NoButtons</enum>
+           </property>
+           <property name="maximum">
+            <number>268435455</number>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="6" column="2">
+         <widget class="QGroupBox" name="groupBox_12">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>1</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>230</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+border: 0px</string>
+          </property>
+          <property name="title">
+           <string>MALT STAR</string>
+          </property>
+          <widget class="QWidget" name="widget_15" native="true">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>30</y>
+             <width>50</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image: url(:/icons/Malt_star_icon.png);
+background-color: rgb(36, 52, 84);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :7px;
+border-top-right-radius : 0px;                  
+border-bottom-left-radius : 7px;
+border-bottom-right-radius : 0px</string>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="malt">
+           <property name="geometry">
+            <rect>
+             <x>58</x>
+             <y>30</y>
+             <width>120</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>10</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+font: 75 10pt &quot;Consolas&quot;;
+border-color: rgb(255, 156, 0);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :0px;
+border-top-right-radius : 7px;                  
+border-bottom-left-radius : 0px;
+border-bottom-right-radius : 7px</string>
+           </property>
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::NoButtons</enum>
+           </property>
+           <property name="maximum">
+            <number>268435455</number>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_4">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>36</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>16</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 156, 0);</string>
+          </property>
+          <property name="text">
+           <string>BREWING</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="3">
+         <widget class="QGroupBox" name="groupBox_13">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>1</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>230</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+border: 0px</string>
+          </property>
+          <property name="title">
+           <string>BARLEY BULB</string>
+          </property>
+          <widget class="QWidget" name="widget_16" native="true">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>30</y>
+             <width>50</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(36, 52, 84);
+image: url(:/icons/Barley_bulb_icon.png);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :7px;
+border-top-right-radius : 0px;                  
+border-bottom-left-radius : 7px;
+border-bottom-right-radius : 0px</string>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="barley">
+           <property name="geometry">
+            <rect>
+             <x>58</x>
+             <y>30</y>
+             <width>120</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>10</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+font: 75 10pt &quot;Consolas&quot;;
+border-color: rgb(255, 156, 0);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :0px;
+border-top-right-radius : 7px;                  
+border-bottom-left-radius : 0px;
+border-bottom-right-radius : 7px</string>
+           </property>
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::NoButtons</enum>
+           </property>
+           <property name="maximum">
+            <number>268435455</number>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="9" column="0">
+         <widget class="QGroupBox" name="groupBox_18">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>1</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>230</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+border: 0px</string>
+          </property>
+          <property name="title">
+           <string>PHAZYONITE</string>
+          </property>
+          <widget class="QWidget" name="widget_22" native="true">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>30</y>
+             <width>50</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image: url(:/icons/Phazyonite_icon.png);
+background-color: rgb(36, 52, 84);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :7px;
+border-top-right-radius : 0px;                  
+border-bottom-left-radius : 7px;
+border-bottom-right-radius : 0px</string>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="phazyonite">
+           <property name="geometry">
+            <rect>
+             <x>58</x>
+             <y>30</y>
+             <width>120</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>10</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+font: 75 10pt &quot;Consolas&quot;;
+border-color: rgb(255, 156, 0);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :0px;
+border-top-right-radius : 7px;                  
+border-bottom-left-radius : 0px;
+border-bottom-right-radius : 7px</string>
+           </property>
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::NoButtons</enum>
+           </property>
+           <property name="maximum">
+            <number>268435455</number>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QGroupBox" name="groupBox_14">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>1</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>230</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+border: 0px</string>
+          </property>
+          <property name="title">
+           <string>CREDITS</string>
+          </property>
+          <widget class="QWidget" name="widget_17" native="true">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>30</y>
+             <width>50</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image:url(:/icons/Credit.png);
+background-color: rgb(36, 52, 84);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :7px;
+border-top-right-radius : 0px;                  
+border-bottom-left-radius : 7px;
+border-bottom-right-radius : 0px</string>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="credits">
+           <property name="geometry">
+            <rect>
+             <x>58</x>
+             <y>30</y>
+             <width>120</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>10</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+font: 75 10pt &quot;Consolas&quot;;
+border-color: rgb(255, 156, 0);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :0px;
+border-top-right-radius : 7px;                  
+border-bottom-left-radius : 0px;
+border-bottom-right-radius : 7px</string>
+           </property>
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::NoButtons</enum>
+           </property>
+           <property name="maximum">
+            <number>268435455</number>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QGroupBox" name="groupBox_15">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>1</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>230</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+border: 0px</string>
+          </property>
+          <property name="title">
+           <string>ERROR CUBES</string>
+          </property>
+          <widget class="QWidget" name="widget_18" native="true">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>30</y>
+             <width>50</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image: url(:/icons/Unknown_artifact_icon.png);
+background-color: rgb(36, 52, 84);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :7px;
+border-top-right-radius : 0px;                  
+border-bottom-left-radius : 7px;
+border-bottom-right-radius : 0px</string>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="error">
+           <property name="geometry">
+            <rect>
+             <x>58</x>
+             <y>30</y>
+             <width>120</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>10</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+font: 75 10pt &quot;Consolas&quot;;
+border-color: rgb(255, 156, 0);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :0px;
+border-top-right-radius : 7px;                  
+border-bottom-left-radius : 0px;
+border-bottom-right-radius : 7px</string>
+           </property>
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::NoButtons</enum>
+           </property>
+           <property name="maximum">
+            <number>9999</number>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="9" column="1">
+         <widget class="QGroupBox" name="groupBox_34">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>1</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>230</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+border: 0px</string>
+          </property>
+          <property name="title">
+           <string>PERK POINTS</string>
+          </property>
+          <widget class="QWidget" name="widget_35" native="true">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>30</y>
+             <width>50</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image: url(:/icons/Perk_points_icon.png);
+background-color: rgb(36, 52, 84);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :7px;
+border-top-right-radius : 0px;                  
+border-bottom-left-radius : 7px;
+border-bottom-right-radius : 0px</string>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="perks">
+           <property name="geometry">
+            <rect>
+             <x>58</x>
+             <y>30</y>
+             <width>120</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>10</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+font: 75 10pt &quot;Consolas&quot;;
+border-color: rgb(255, 156, 0);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :0px;
+border-top-right-radius : 7px;                  
+border-bottom-left-radius : 0px;
+border-bottom-right-radius : 7px</string>
+           </property>
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::NoButtons</enum>
+           </property>
+           <property name="maximum">
+            <number>268435455</number>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="season_page">
+     <widget class="QScrollArea" name="scrollArea_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1000</width>
+        <height>460</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0px</string>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1000</width>
+         <height>460</height>
+        </rect>
+       </property>
+       <widget class="QWidget" name="horizontalLayoutWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>50</y>
+          <width>902</width>
+          <height>80</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QGroupBox" name="groupBox_3">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>289</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI Black</family>
+             <pointsize>14</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+border: 0px</string>
+           </property>
+           <property name="title">
+            <string>RANK</string>
+           </property>
+           <widget class="QSpinBox" name="seasonLvlBox">
+            <property name="geometry">
+             <rect>
+              <x>58</x>
+              <y>30</y>
+              <width>200</width>
+              <height>44</height>
+             </rect>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>170</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Consolas</family>
+              <pointsize>10</pointsize>
+              <weight>9</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);
+font: 75 10pt &quot;Consolas&quot;;
+border-color: rgb(255, 156, 0);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :0px;
+border-top-right-radius : 7px;                  
+border-bottom-left-radius : 0px;
+border-bottom-right-radius : 7px</string>
+            </property>
+            <property name="buttonSymbols">
+             <enum>QAbstractSpinBox::NoButtons</enum>
+            </property>
+            <property name="maximum">
+             <number>100</number>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_2">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>30</y>
+              <width>49</width>
+              <height>44</height>
+             </rect>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Segoe UI Black</family>
+              <pointsize>10</pointsize>
+              <weight>10</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);
+font: 87 10pt &quot;Segoe UI Black&quot;;
+border-color: rgb(255, 156, 0);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :7px;
+border-top-right-radius : 0px;                  
+border-bottom-left-radius : 7px;
+border-bottom-right-radius : 0px</string>
+            </property>
+            <property name="text">
+             <string>Lvl</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>289</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI Black</family>
+             <pointsize>14</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+border: 0px</string>
+           </property>
+           <property name="title">
+            <string>PROGRESS</string>
+           </property>
+           <widget class="QWidget" name="widget_2" native="true">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>30</y>
+              <width>49</width>
+              <height>44</height>
+             </rect>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">image: url(:/icons/season.webp);
+background-color: rgb(36, 52, 84);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :7px;
+border-top-right-radius : 0px;                  
+border-bottom-left-radius : 7px;
+border-bottom-right-radius : 0px</string>
+            </property>
+           </widget>
+           <widget class="QSpinBox" name="seasonXPBox">
+            <property name="geometry">
+             <rect>
+              <x>58</x>
+              <y>30</y>
+              <width>200</width>
+              <height>44</height>
+             </rect>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>170</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Consolas</family>
+              <pointsize>10</pointsize>
+              <weight>9</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);
+font: 75 10pt &quot;Consolas&quot;;
+border-color: rgb(255, 156, 0);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :0px;
+border-top-right-radius : 7px;                  
+border-bottom-left-radius : 0px;
+border-bottom-right-radius : 7px</string>
+            </property>
+            <property name="buttonSymbols">
+             <enum>QAbstractSpinBox::NoButtons</enum>
+            </property>
+            <property name="maximum">
+             <number>9999</number>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>289</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI Black</family>
+             <pointsize>14</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+border: 0px</string>
+           </property>
+           <property name="title">
+            <string>SCRIP</string>
+           </property>
+           <widget class="QWidget" name="widget" native="true">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>30</y>
+              <width>49</width>
+              <height>44</height>
+             </rect>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">image: url(:/icons/Scrip_04_icon.png);
+background-color: rgb(36, 52, 84);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :7px;
+border-top-right-radius : 0px;                  
+border-bottom-left-radius : 7px;
+border-bottom-right-radius : 0px</string>
+            </property>
+           </widget>
+           <widget class="QSpinBox" name="scripBox">
+            <property name="geometry">
+             <rect>
+              <x>58</x>
+              <y>30</y>
+              <width>200</width>
+              <height>44</height>
+             </rect>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>170</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Consolas</family>
+              <pointsize>10</pointsize>
+              <weight>9</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);
+font: 75 10pt &quot;Consolas&quot;;
+border-color: rgb(255, 156, 0);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :0px;
+border-top-right-radius : 7px;                  
+border-bottom-left-radius : 0px;
+border-bottom-right-radius : 7px</string>
+            </property>
+            <property name="buttonSymbols">
+             <enum>QAbstractSpinBox::NoButtons</enum>
+            </property>
+            <property name="maximum">
+             <number>999</number>
+            </property>
+            <property name="value">
+             <number>0</number>
+            </property>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="enginner_page">
+     <widget class="QScrollArea" name="scrollArea_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>998</width>
+        <height>460</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0px</string>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="engineer_contents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>998</width>
+         <height>460</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="engineer_layout">
+        <property name="leftMargin">
+         <number>25</number>
+        </property>
+        <property name="rightMargin">
+         <number>25</number>
+        </property>
+        <property name="horizontalSpacing">
+         <number>10</number>
+        </property>
+        <property name="verticalSpacing">
+         <number>15</number>
+        </property>
+        <item row="1" column="2">
+         <widget class="QGroupBox" name="groupBox_21">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>1</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>230</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+border: 0px</string>
+          </property>
+          <property name="title">
+           <string>PROMOTION</string>
+          </property>
+          <widget class="QComboBox" name="engineer_promotion">
+           <property name="geometry">
+            <rect>
+             <x>17</x>
+             <y>30</y>
+             <width>161</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+font: 75 10pt &quot;Consolas&quot;;
+border-color: rgb(255, 156, 0);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :7px;
+border-top-right-radius : 7px;                  
+border-bottom-left-radius : 7px;
+border-bottom-right-radius : 7px</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>NONE</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../res/icons.qrc">
+              <normaloff>:/promote/Icon_Promotion_StarGold.png</normaloff>:/promote/Icon_Promotion_StarGold.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>BRONZE I</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../res/icons.qrc">
+              <normaloff>:/promote/600px-Promotion_Tier1_Bronze_Lvl1.png</normaloff>:/promote/600px-Promotion_Tier1_Bronze_Lvl1.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>BRONZE II</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../res/icons.qrc">
+              <normaloff>:/promote/600px-Promotion_Tier1_Bronze_Lvl2.png</normaloff>:/promote/600px-Promotion_Tier1_Bronze_Lvl2.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>BRONZE III</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../res/icons.qrc">
+              <normaloff>:/promote/600px-Promotion_Tier1_Bronze_Lvl3.png</normaloff>:/promote/600px-Promotion_Tier1_Bronze_Lvl3.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>SILVER I</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../res/icons.qrc">
+              <normaloff>:/promote/Promotion_Tier2_Silver_Lvl1.png</normaloff>:/promote/Promotion_Tier2_Silver_Lvl1.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>SILVER II</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../res/icons.qrc">
+              <normaloff>:/promote/Promotion_Tier2_Silver_Lvl2.png</normaloff>:/promote/Promotion_Tier2_Silver_Lvl2.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>SILVER III</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../res/icons.qrc">
+              <normaloff>:/promote/Promotion_Tier2_Silver_Lvl3.png</normaloff>:/promote/Promotion_Tier2_Silver_Lvl3.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>GOLD I</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../res/icons.qrc">
+              <normaloff>:/promote/Promotion_Tier3_Gold_Lvl1.png</normaloff>:/promote/Promotion_Tier3_Gold_Lvl1.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>GOLD II</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../res/icons.qrc">
+              <normaloff>:/promote/Promotion_Tier3_Gold_Lvl2.png</normaloff>:/promote/Promotion_Tier3_Gold_Lvl2.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>GOLD III</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../res/icons.qrc">
+              <normaloff>:/promote/Promotion_Tier3_Gold_Lvl3.png</normaloff>:/promote/Promotion_Tier3_Gold_Lvl3.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Platinum I</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Platinum II</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Platinum III</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Diamond I</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Diamond II</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Diamond III</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Legendary I</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Legendary II</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Legendary III</string>
+            </property>
+           </item>
+          </widget>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QGroupBox" name="groupBox_16">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>1</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>230</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+border: 0px</string>
+          </property>
+          <property name="title">
+           <string>LEVEL</string>
+          </property>
+          <widget class="QWidget" name="widget_23" native="true">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>30</y>
+             <width>50</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image:url(:/icons/Class_level_icon.png);
+background-color: rgb(36, 52, 84);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :7px;
+border-top-right-radius : 0px;                  
+border-bottom-left-radius : 7px;
+border-bottom-right-radius : 0px</string>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="engineer_lvl">
+           <property name="geometry">
+            <rect>
+             <x>58</x>
+             <y>30</y>
+             <width>120</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>10</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+font: 75 10pt &quot;Consolas&quot;;
+border-color: rgb(255, 156, 0);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :0px;
+border-top-right-radius : 7px;                  
+border-bottom-left-radius : 0px;
+border-bottom-right-radius : 7px</string>
+           </property>
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::NoButtons</enum>
+           </property>
+           <property name="maximum">
+            <number>25</number>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QGroupBox" name="groupBox_19">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>1</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>230</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+border: 0px</string>
+          </property>
+          <property name="title">
+           <string>PROGRESS</string>
+          </property>
+          <widget class="QWidget" name="widget_24" native="true">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>30</y>
+             <width>50</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image:url(:/icons/Xp_icon.png);
+background-color: rgb(36, 52, 84);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :7px;
+border-top-right-radius : 0px;                  
+border-bottom-left-radius : 7px;
+border-bottom-right-radius : 0px</string>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="engineer_xp">
+           <property name="geometry">
+            <rect>
+             <x>58</x>
+             <y>30</y>
+             <width>120</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>10</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+font: 75 10pt &quot;Consolas&quot;;
+border-color: rgb(255, 156, 0);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :0px;
+border-top-right-radius : 7px;                  
+border-bottom-left-radius : 0px;
+border-bottom-right-radius : 7px</string>
+           </property>
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::NoButtons</enum>
+           </property>
+           <property name="maximum">
+            <number>99999</number>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_7">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>36</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>16</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 156, 0);</string>
+          </property>
+          <property name="text">
+           <string>OVERCLOCKS</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_6">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>36</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>16</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 156, 0);</string>
+          </property>
+          <property name="text">
+           <string>RANK</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLabel" name="label_16">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>36</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>16</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 156, 0);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLabel" name="label_17">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>36</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>16</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 156, 0);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="driller_page">
+     <widget class="QScrollArea" name="scrollArea_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>998</width>
+        <height>460</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0px</string>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="driller_contents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>998</width>
+         <height>460</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="driller_layout">
+        <property name="leftMargin">
+         <number>25</number>
+        </property>
+        <property name="rightMargin">
+         <number>25</number>
+        </property>
+        <property name="horizontalSpacing">
+         <number>10</number>
+        </property>
+        <property name="verticalSpacing">
+         <number>15</number>
+        </property>
+        <item row="2" column="1">
+         <widget class="QLabel" name="label_14">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>36</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>16</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 156, 0);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_8">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>36</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>16</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 156, 0);</string>
+          </property>
+          <property name="text">
+           <string>OVERCLOCKS</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_9">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>36</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>16</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 156, 0);</string>
+          </property>
+          <property name="text">
+           <string>RANK</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QGroupBox" name="groupBox_23">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>1</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>230</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+border: 0px</string>
+          </property>
+          <property name="title">
+           <string>PROMOTION</string>
+          </property>
+          <widget class="QComboBox" name="driller_promotion">
+           <property name="geometry">
+            <rect>
+             <x>17</x>
+             <y>30</y>
+             <width>161</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+font: 75 10pt &quot;Consolas&quot;;
+border-color: rgb(255, 156, 0);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :7px;
+border-top-right-radius : 7px;                  
+border-bottom-left-radius : 7px;
+border-bottom-right-radius : 7px</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>NONE</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../res/icons.qrc">
+              <normaloff>:/promote/Icon_Promotion_StarGold.png</normaloff>:/promote/Icon_Promotion_StarGold.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>BRONZE I</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../res/icons.qrc">
+              <normaloff>:/promote/600px-Promotion_Tier1_Bronze_Lvl1.png</normaloff>:/promote/600px-Promotion_Tier1_Bronze_Lvl1.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>BRONZE II</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../res/icons.qrc">
+              <normaloff>:/promote/600px-Promotion_Tier1_Bronze_Lvl2.png</normaloff>:/promote/600px-Promotion_Tier1_Bronze_Lvl2.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>BRONZE III</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../res/icons.qrc">
+              <normaloff>:/promote/600px-Promotion_Tier1_Bronze_Lvl3.png</normaloff>:/promote/600px-Promotion_Tier1_Bronze_Lvl3.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>SILVER I</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../res/icons.qrc">
+              <normaloff>:/promote/Promotion_Tier2_Silver_Lvl1.png</normaloff>:/promote/Promotion_Tier2_Silver_Lvl1.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>SILVER II</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../res/icons.qrc">
+              <normaloff>:/promote/Promotion_Tier2_Silver_Lvl2.png</normaloff>:/promote/Promotion_Tier2_Silver_Lvl2.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>SILVER III</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../res/icons.qrc">
+              <normaloff>:/promote/Promotion_Tier2_Silver_Lvl3.png</normaloff>:/promote/Promotion_Tier2_Silver_Lvl3.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>GOLD I</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../res/icons.qrc">
+              <normaloff>:/promote/Promotion_Tier3_Gold_Lvl1.png</normaloff>:/promote/Promotion_Tier3_Gold_Lvl1.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>GOLD II</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../res/icons.qrc">
+              <normaloff>:/promote/Promotion_Tier3_Gold_Lvl2.png</normaloff>:/promote/Promotion_Tier3_Gold_Lvl2.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>GOLD III</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../res/icons.qrc">
+              <normaloff>:/promote/Promotion_Tier3_Gold_Lvl3.png</normaloff>:/promote/Promotion_Tier3_Gold_Lvl3.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Platinum I</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Platinum II</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Platinum III</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Diamond I</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Diamond II</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Diamond III</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Legendary I</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Legendary II</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Legendary III</string>
+            </property>
+           </item>
+          </widget>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QGroupBox" name="groupBox_25">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>1</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>230</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+border: 0px</string>
+          </property>
+          <property name="title">
+           <string>LEVEL</string>
+          </property>
+          <widget class="QWidget" name="widget_28" native="true">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>30</y>
+             <width>50</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image:url(:/icons/Class_level_icon.png);
+background-color: rgb(36, 52, 84);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :7px;
+border-top-right-radius : 0px;                  
+border-bottom-left-radius : 7px;
+border-bottom-right-radius : 0px</string>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="driller_lvl">
+           <property name="geometry">
+            <rect>
+             <x>58</x>
+             <y>30</y>
+             <width>120</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>10</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+font: 75 10pt &quot;Consolas&quot;;
+border-color: rgb(255, 156, 0);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :0px;
+border-top-right-radius : 7px;                  
+border-bottom-left-radius : 0px;
+border-bottom-right-radius : 7px</string>
+           </property>
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::NoButtons</enum>
+           </property>
+           <property name="maximum">
+            <number>9999</number>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QGroupBox" name="groupBox_22">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>1</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>230</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+border: 0px</string>
+          </property>
+          <property name="title">
+           <string>PROGRESS</string>
+          </property>
+          <widget class="QWidget" name="widget_26" native="true">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>30</y>
+             <width>50</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image:url(:/icons/Xp_icon.png);
+background-color: rgb(36, 52, 84);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :7px;
+border-top-right-radius : 0px;                  
+border-bottom-left-radius : 7px;
+border-bottom-right-radius : 0px</string>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="driller_xp">
+           <property name="geometry">
+            <rect>
+             <x>58</x>
+             <y>30</y>
+             <width>120</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>10</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+font: 75 10pt &quot;Consolas&quot;;
+border-color: rgb(255, 156, 0);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :0px;
+border-top-right-radius : 7px;                  
+border-bottom-left-radius : 0px;
+border-bottom-right-radius : 7px</string>
+           </property>
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::NoButtons</enum>
+           </property>
+           <property name="maximum">
+            <number>99999</number>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLabel" name="label_15">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>36</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>16</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 156, 0);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="gunner_page">
+     <widget class="QScrollArea" name="scrollArea_5">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>998</width>
+        <height>460</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0px</string>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="gunner_contents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>998</width>
+         <height>460</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gunner_layout">
+        <property name="leftMargin">
+         <number>25</number>
+        </property>
+        <property name="rightMargin">
+         <number>25</number>
+        </property>
+        <property name="horizontalSpacing">
+         <number>10</number>
+        </property>
+        <property name="verticalSpacing">
+         <number>15</number>
+        </property>
+        <item row="1" column="2">
+         <widget class="QGroupBox" name="groupBox_27">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>1</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>230</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+border: 0px</string>
+          </property>
+          <property name="title">
+           <string>PROMOTION</string>
+          </property>
+          <widget class="QComboBox" name="gunner_promotion">
+           <property name="geometry">
+            <rect>
+             <x>17</x>
+             <y>30</y>
+             <width>161</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+font: 75 10pt &quot;Consolas&quot;;
+border-color: rgb(255, 156, 0);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :7px;
+border-top-right-radius : 7px;                  
+border-bottom-left-radius : 7px;
+border-bottom-right-radius : 7px</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>NONE</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../res/icons.qrc">
+              <normaloff>:/promote/Icon_Promotion_StarGold.png</normaloff>:/promote/Icon_Promotion_StarGold.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>BRONZE I</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../res/icons.qrc">
+              <normaloff>:/promote/600px-Promotion_Tier1_Bronze_Lvl1.png</normaloff>:/promote/600px-Promotion_Tier1_Bronze_Lvl1.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>BRONZE II</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../res/icons.qrc">
+              <normaloff>:/promote/600px-Promotion_Tier1_Bronze_Lvl2.png</normaloff>:/promote/600px-Promotion_Tier1_Bronze_Lvl2.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>BRONZE III</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../res/icons.qrc">
+              <normaloff>:/promote/600px-Promotion_Tier1_Bronze_Lvl3.png</normaloff>:/promote/600px-Promotion_Tier1_Bronze_Lvl3.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>SILVER I</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../res/icons.qrc">
+              <normaloff>:/promote/Promotion_Tier2_Silver_Lvl1.png</normaloff>:/promote/Promotion_Tier2_Silver_Lvl1.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>SILVER II</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../res/icons.qrc">
+              <normaloff>:/promote/Promotion_Tier2_Silver_Lvl2.png</normaloff>:/promote/Promotion_Tier2_Silver_Lvl2.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>SILVER III</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../res/icons.qrc">
+              <normaloff>:/promote/Promotion_Tier2_Silver_Lvl3.png</normaloff>:/promote/Promotion_Tier2_Silver_Lvl3.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>GOLD I</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../res/icons.qrc">
+              <normaloff>:/promote/Promotion_Tier3_Gold_Lvl1.png</normaloff>:/promote/Promotion_Tier3_Gold_Lvl1.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>GOLD II</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../res/icons.qrc">
+              <normaloff>:/promote/Promotion_Tier3_Gold_Lvl2.png</normaloff>:/promote/Promotion_Tier3_Gold_Lvl2.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>GOLD III</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../res/icons.qrc">
+              <normaloff>:/promote/Promotion_Tier3_Gold_Lvl3.png</normaloff>:/promote/Promotion_Tier3_Gold_Lvl3.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Platinum I</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Platinum II</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Platinum III</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Diamond I</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Diamond II</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Diamond III</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Legendary I</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Legendary II</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Legendary III</string>
+            </property>
+           </item>
+          </widget>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QGroupBox" name="groupBox_26">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>1</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>230</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+border: 0px</string>
+          </property>
+          <property name="title">
+           <string>PROGRESS</string>
+          </property>
+          <widget class="QWidget" name="widget_29" native="true">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>30</y>
+             <width>50</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image:url(:/icons/Xp_icon.png);
+background-color: rgb(36, 52, 84);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :7px;
+border-top-right-radius : 0px;                  
+border-bottom-left-radius : 7px;
+border-bottom-right-radius : 0px</string>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="gunner_xp">
+           <property name="geometry">
+            <rect>
+             <x>58</x>
+             <y>30</y>
+             <width>120</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>10</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+font: 75 10pt &quot;Consolas&quot;;
+border-color: rgb(255, 156, 0);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :0px;
+border-top-right-radius : 7px;                  
+border-bottom-left-radius : 0px;
+border-bottom-right-radius : 7px</string>
+           </property>
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::NoButtons</enum>
+           </property>
+           <property name="maximum">
+            <number>99999</number>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QGroupBox" name="groupBox_29">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>1</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>230</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+border: 0px</string>
+          </property>
+          <property name="title">
+           <string>LEVEL</string>
+          </property>
+          <widget class="QWidget" name="widget_31" native="true">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>30</y>
+             <width>50</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image:url(:/icons/Class_level_icon.png);
+background-color: rgb(36, 52, 84);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :7px;
+border-top-right-radius : 0px;                  
+border-bottom-left-radius : 7px;
+border-bottom-right-radius : 0px</string>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="gunner_lvl">
+           <property name="geometry">
+            <rect>
+             <x>58</x>
+             <y>30</y>
+             <width>120</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>10</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+font: 75 10pt &quot;Consolas&quot;;
+border-color: rgb(255, 156, 0);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :0px;
+border-top-right-radius : 7px;                  
+border-bottom-left-radius : 0px;
+border-bottom-right-radius : 7px</string>
+           </property>
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::NoButtons</enum>
+           </property>
+           <property name="maximum">
+            <number>9999</number>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_11">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>36</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>16</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 156, 0);</string>
+          </property>
+          <property name="text">
+           <string>RANK</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_10">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>36</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>16</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 156, 0);</string>
+          </property>
+          <property name="text">
+           <string>OVERCLOCKS</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLabel" name="label_18">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>36</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>16</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 156, 0);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLabel" name="label_19">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>36</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>16</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 156, 0);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="scout_page">
+     <widget class="QScrollArea" name="scrollArea_6">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>998</width>
+        <height>460</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0px</string>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scout_contents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>998</width>
+         <height>460</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="scout_layout">
+        <property name="leftMargin">
+         <number>25</number>
+        </property>
+        <property name="rightMargin">
+         <number>25</number>
+        </property>
+        <property name="horizontalSpacing">
+         <number>10</number>
+        </property>
+        <property name="verticalSpacing">
+         <number>15</number>
+        </property>
+        <item row="1" column="0">
+         <widget class="QGroupBox" name="groupBox_33">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>1</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>230</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+border: 0px</string>
+          </property>
+          <property name="title">
+           <string>LEVEL</string>
+          </property>
+          <widget class="QWidget" name="widget_34" native="true">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>30</y>
+             <width>50</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image:url(:/icons/Class_level_icon.png);
+background-color: rgb(36, 52, 84);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :7px;
+border-top-right-radius : 0px;                  
+border-bottom-left-radius : 7px;
+border-bottom-right-radius : 0px</string>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="scout_lvl">
+           <property name="geometry">
+            <rect>
+             <x>58</x>
+             <y>30</y>
+             <width>120</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>10</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+font: 75 10pt &quot;Consolas&quot;;
+border-color: rgb(255, 156, 0);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :0px;
+border-top-right-radius : 7px;                  
+border-bottom-left-radius : 0px;
+border-bottom-right-radius : 7px</string>
+           </property>
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::NoButtons</enum>
+           </property>
+           <property name="maximum">
+            <number>9999</number>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QGroupBox" name="groupBox_30">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>1</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>230</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+border: 0px</string>
+          </property>
+          <property name="title">
+           <string>PROGRESS</string>
+          </property>
+          <widget class="QWidget" name="widget_32" native="true">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>30</y>
+             <width>50</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image:url(:/icons/Xp_icon.png);
+background-color: rgb(36, 52, 84);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :7px;
+border-top-right-radius : 0px;                  
+border-bottom-left-radius : 7px;
+border-bottom-right-radius : 0px</string>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="scout_xp">
+           <property name="geometry">
+            <rect>
+             <x>58</x>
+             <y>30</y>
+             <width>120</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>10</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+font: 75 10pt &quot;Consolas&quot;;
+border-color: rgb(255, 156, 0);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :0px;
+border-top-right-radius : 7px;                  
+border-bottom-left-radius : 0px;
+border-bottom-right-radius : 7px</string>
+           </property>
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::NoButtons</enum>
+           </property>
+           <property name="maximum">
+            <number>99999</number>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QGroupBox" name="groupBox_31">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>1</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>230</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);
+border: 0px</string>
+          </property>
+          <property name="title">
+           <string>PROMOTION</string>
+          </property>
+          <widget class="QComboBox" name="scout_promotion">
+           <property name="geometry">
+            <rect>
+             <x>17</x>
+             <y>30</y>
+             <width>161</width>
+             <height>35</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+font: 75 10pt &quot;Consolas&quot;;
+border-color: rgb(255, 156, 0);
+border: 2px solid rgb(255, 156, 0);
+border-top-left-radius :7px;
+border-top-right-radius : 7px;                  
+border-bottom-left-radius : 7px;
+border-bottom-right-radius : 7px</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>NONE</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../res/icons.qrc">
+              <normaloff>:/promote/Icon_Promotion_StarGold.png</normaloff>:/promote/Icon_Promotion_StarGold.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>BRONZE I</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../res/icons.qrc">
+              <normaloff>:/promote/600px-Promotion_Tier1_Bronze_Lvl1.png</normaloff>:/promote/600px-Promotion_Tier1_Bronze_Lvl1.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>BRONZE II</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../res/icons.qrc">
+              <normaloff>:/promote/600px-Promotion_Tier1_Bronze_Lvl2.png</normaloff>:/promote/600px-Promotion_Tier1_Bronze_Lvl2.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>BRONZE III</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../res/icons.qrc">
+              <normaloff>:/promote/600px-Promotion_Tier1_Bronze_Lvl3.png</normaloff>:/promote/600px-Promotion_Tier1_Bronze_Lvl3.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>SILVER I</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../res/icons.qrc">
+              <normaloff>:/promote/Promotion_Tier2_Silver_Lvl1.png</normaloff>:/promote/Promotion_Tier2_Silver_Lvl1.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>SILVER II</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../res/icons.qrc">
+              <normaloff>:/promote/Promotion_Tier2_Silver_Lvl2.png</normaloff>:/promote/Promotion_Tier2_Silver_Lvl2.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>SILVER III</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../res/icons.qrc">
+              <normaloff>:/promote/Promotion_Tier2_Silver_Lvl3.png</normaloff>:/promote/Promotion_Tier2_Silver_Lvl3.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>GOLD I</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../res/icons.qrc">
+              <normaloff>:/promote/Promotion_Tier3_Gold_Lvl1.png</normaloff>:/promote/Promotion_Tier3_Gold_Lvl1.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>GOLD II</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../res/icons.qrc">
+              <normaloff>:/promote/Promotion_Tier3_Gold_Lvl2.png</normaloff>:/promote/Promotion_Tier3_Gold_Lvl2.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>GOLD III</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../res/icons.qrc">
+              <normaloff>:/promote/Promotion_Tier3_Gold_Lvl3.png</normaloff>:/promote/Promotion_Tier3_Gold_Lvl3.png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Platinum I</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Platinum II</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Platinum III</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Diamond I</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Diamond II</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Diamond III</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Legendary I</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Legendary II</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Legendary III</string>
+            </property>
+           </item>
+          </widget>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_13">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>36</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>16</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 156, 0);</string>
+          </property>
+          <property name="text">
+           <string>RANK</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_12">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>36</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>16</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 156, 0);</string>
+          </property>
+          <property name="text">
+           <string>OVERCLOCKS</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLabel" name="label_20">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>36</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>16</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 156, 0);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLabel" name="label_21">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>36</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>16</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 156, 0);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>540</y>
+      <width>341</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QPushButton" name="open_button">
+       <property name="font">
+        <font>
+         <family>Arial Black</family>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(255, 156, 0);
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>open file</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="save_button">
+       <property name="font">
+        <font>
+         <family>Arial Black</family>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(255, 156, 0);
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>save</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="reset">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>560</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Black</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(255, 156, 0);
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Reset</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../res/icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
