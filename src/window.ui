@@ -310,22 +310,24 @@ border: 2px solid rgb(255, 156, 0);</string>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="start_page">
      <widget class="QLabel" name="label">
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>10</y>
+        <y>60</y>
         <width>1000</width>
         <height>50</height>
        </rect>
       </property>
       <property name="font">
        <font>
-        <family>Arial</family>
+        <family>Consolas</family>
         <pointsize>20</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
        </font>
       </property>
       <property name="styleSheet">
@@ -341,15 +343,15 @@ border: 2px solid rgb(255, 156, 0);</string>
      <widget class="QLabel" name="label_22">
       <property name="geometry">
        <rect>
-        <x>220</x>
-        <y>180</y>
-        <width>581</width>
-        <height>111</height>
+        <x>0</x>
+        <y>250</y>
+        <width>1001</width>
+        <height>61</height>
        </rect>
       </property>
       <property name="font">
        <font>
-        <family>Arial</family>
+        <family>Consolas</family>
         <pointsize>14</pointsize>
         <weight>75</weight>
         <bold>true</bold>
@@ -365,9 +367,8 @@ border: 2px solid rgb(255, 156, 0);</string>
        <number>0</number>
       </property>
       <property name="text">
-       <string>Click 'open file' to select your .sav file 
-
-REMEMBER TO BACKUP YOUR SAVEFILE FIRST!</string>
+       <string>The editor will automatically back up the file you opened in 
+the same folder as the save file with the extension of .old</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -379,40 +380,11 @@ REMEMBER TO BACKUP YOUR SAVEFILE FIRST!</string>
        <number>0</number>
       </property>
      </widget>
-     <widget class="QLabel" name="label_23">
-      <property name="geometry">
-       <rect>
-        <x>150</x>
-        <y>60</y>
-        <width>731</width>
-        <height>111</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Arial</family>
-        <pointsize>14</pointsize>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color: rgb(255, 255, 255);</string>
-      </property>
-      <property name="text">
-       <string>This is a game save file editor to provide you an easy 
-
-and quick access to in-game resources, overclocks, etc.</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
      <widget class="QLabel" name="label_24">
       <property name="geometry">
        <rect>
-        <x>340</x>
-        <y>360</y>
+        <x>330</x>
+        <y>390</y>
         <width>321</width>
         <height>61</height>
        </rect>
@@ -429,8 +401,7 @@ and quick access to in-game resources, overclocks, etc.</string>
        <string notr="true">color: rgb(255, 255, 255);</string>
       </property>
       <property name="text">
-       <string>developed by WayneYellow
-https://github.com/WayneYellow</string>
+       <string>https://github.com/WayneYellow</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -440,8 +411,8 @@ https://github.com/WayneYellow</string>
       <property name="geometry">
        <rect>
         <x>330</x>
-        <y>300</y>
-        <width>331</width>
+        <y>330</y>
+        <width>321</width>
         <height>51</height>
        </rect>
       </property>
@@ -461,6 +432,30 @@ https://github.com/WayneYellow</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_23">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>130</y>
+        <width>681</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>18</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Click 'open file' to select your .sav file</string>
       </property>
      </widget>
     </widget>
@@ -4516,6 +4511,19 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>Reset</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="change_log">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>570</y>
+      <width>58</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
     </property>
    </widget>
   </widget>

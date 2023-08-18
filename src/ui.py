@@ -38,6 +38,23 @@ class MainWindow(QtWidgets.QMainWindow, Ui_DeepRockGalaticSaveEditor):
             "credits": self.credits,
             "perks" : self.perks,
         }
+        for key, value in self.resources_box.items():
+            value.editingFinished.connect(self.resources_value_check)
+        
+        self.seasonXPBox.editingFinished.connect(self.season_value_check)
+
+        self.driller_lvl.editingFinished.connect(self.dwarf_value_check)
+        self.driller_xp.editingFinished.connect(self.dwarf_value_check)
+        self.driller_promotion.currentIndexChanged.connect(self.dwarf_value_check)
+        self.engineer_lvl.editingFinished.connect(self.dwarf_value_check)
+        self.engineer_xp.editingFinished.connect(self.dwarf_value_check)
+        self.engineer_promotion.currentIndexChanged.connect(self.dwarf_value_check)
+        self.gunner_lvl.editingFinished.connect(self.dwarf_value_check)
+        self.gunner_xp.editingFinished.connect(self.dwarf_value_check)
+        self.gunner_promotion.currentIndexChanged.connect(self.dwarf_value_check)
+        self.scout_lvl.editingFinished.connect(self.dwarf_value_check)
+        self.scout_xp.editingFinished.connect(self.dwarf_value_check)
+        self.scout_promotion.currentIndexChanged.connect(self.dwarf_value_check)
 
         for button in self.pageButton:
             button.setEnabled(False)
@@ -220,6 +237,65 @@ class MainWindow(QtWidgets.QMainWindow, Ui_DeepRockGalaticSaveEditor):
         for value in self.scout_oc_list:
             self.layouts["Scout"].addWidget(value)
 
+    def resources_value_check(self):
+        if(self.sender().value() < 0):
+            self.sender().setValue(0)
+    
+    def season_value_check(self):
+        if(self.sender().value() < 0):
+            self.sender().setValue(0)
+        elif(self.sender().value() >= XP_PER_SEASON_LEVEL):
+            self.sender().setValue(XP_PER_SEASON_LEVEL-1)
+
+    def dwarf_value_check(self):
+        if(self.sender().objectName().startswith('engineer')):
+            lv = self.engineer_lvl.value()
+            xp = self.engineer_xp.value()
+            promo = self.engineer_promotion.currentIndex()
+            if(lv < 0):
+                self.engineer_lvl.setValue(0)
+            elif(lv > 25):
+                self.engineer_lvl.setValue(25)
+            if(xp < 0):
+                self.engineer_xp.setValue(0)
+            elif(xp >= XP_TABLE[lv] - XP_TABLE[lv-1]):
+                self.engineer_xp.setValue(XP_TABLE[lv]-XP_TABLE[lv-1]-1)
+        elif(self.sender().objectName().startswith('driller')):
+            lv = self.driller_lvl.value()
+            xp = self.driller_xp.value()
+            promo = self.driller_promotion.currentIndex()
+            if(lv < 0):
+                self.driller_lvl.setValue(0)
+            elif(lv > 25):
+                self.driller_lvl.setValue(25)
+            if(xp < 0):
+                self.driller_xp.setValue(0)
+            elif(xp >= XP_TABLE[lv] - XP_TABLE[lv-1]):
+                self.driller_xp.setValue(XP_TABLE[lv]-XP_TABLE[lv-1]-1)
+        elif(self.sender().objectName().startswith('gunner')):
+            lv = self.gunner_lvl.value()
+            xp = self.gunner_xp.value()
+            promo = self.gunner_promotion.currentIndex()
+            if(lv < 0):
+                self.gunner_lvl.setValue(0)
+            elif(lv > 25):
+                self.gunner_lvl.setValue(25)
+            if(xp < 0):
+                self.gunner_xp.setValue(0)
+            elif(xp >= XP_TABLE[lv] - XP_TABLE[lv-1]):
+                self.gunner_xp.setValue(XP_TABLE[lv]-XP_TABLE[lv-1]-1)
+        elif(self.sender().objectName().startswith('scout')):
+            lv = self.scout_lvl.value()
+            xp = self.scout_xp.value()
+            promo = self.scout_promotion.currentIndex()
+            if(lv < 0):
+                self.scout_lvl.setValue(0)
+            elif(lv > 25):
+                self.scout_lvl.setValue(25)
+            if(xp < 0):
+                self.scout_xp.setValue(0)
+            elif(xp >= XP_TABLE[lv] - XP_TABLE[lv-1]):
+                self.scout_xp.setValue(XP_TABLE[lv]-XP_TABLE[lv-1]-1)
 
     def open_file(self):
         steam_path = modules.findSteamPath()
