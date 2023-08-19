@@ -480,10 +480,10 @@ class MainWindow(QtWidgets.QMainWindow, Ui_DeepRockGalacticSaveEditor):
             ns["resources"][key] = box.value()
         
         
-        ns["xp"]["driller"]["xp"] = self.driller_xp.value()
-        ns["xp"]["engineer"]["xp"] = self.engineer_xp.value()
-        ns["xp"]["gunner"]["xp"] = self.gunner_xp.value()
-        ns["xp"]["scout"]["xp"] = self.scout_xp.value()
+        ns["xp"]["driller"]["xp"] = self.driller_xp.value() + XP_TABLE[self.driller_lvl.value() - 1]
+        ns["xp"]["engineer"]["xp"] = self.engineer_xp.value() + XP_TABLE[self.engineer_lvl.value() - 1]
+        ns["xp"]["gunner"]["xp"] = self.gunner_xp.value() + XP_TABLE[self.gunner_lvl.value() - 1]
+        ns["xp"]["scout"]["xp"] = self.scout_xp.value() + XP_TABLE[self.scout_lvl.value() - 1]
 
         driller_promo = int(self.driller_promotion.currentIndex())
         gunner_promo = int(self.gunner_promotion.currentIndex())
