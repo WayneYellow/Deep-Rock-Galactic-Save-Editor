@@ -18,7 +18,7 @@ Deep Rock Galactic Save Editor is a tool for editing save files of the game Deep
 Two setup methods are provided:
 ### 1. release executable(recommended):
 This is a quick and easy way to use the editor. Good for users who don't have Python installed.
-- Download the .zip file from the [releases](https://github.com/WayneYellow/Deep-Rock-Galatic-Save-Editor/releases/tag/v1.0.0)
+- Download the .zip file from the [releases](https://github.com/WayneYellow/Deep-Rock-Galactic-Save-Editor/releases/tag/v1.0.0)
 - Extract the .zip file
 - Run the .exe file (Deep-Rock-Galatic-Save-Editor-1.0.0.exe)
 - you should be able to use it now, for usage guide, see [Usage](#usage)
