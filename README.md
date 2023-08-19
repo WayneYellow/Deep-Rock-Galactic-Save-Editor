@@ -33,9 +33,13 @@ git clone https://github.com/WayneYellow/Deep-Rock-Galactic-Save-Editor.git
 ```bash
 pip install -r requirements.txt
 ```
-- run the code
+-switch to the directory
 ```bash
-python ./src/main.py
+cd ./src
+```
+- run the mian.py
+```bash
+python main.py
 ```
 - you should be able to use it now, for usage guide, see [Usage](#usage)
 
