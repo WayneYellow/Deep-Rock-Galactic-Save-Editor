@@ -3,7 +3,7 @@ from PyQt6.QtWidgets import QGridLayout, QLabel, QHBoxLayout, QMessageBox, QGrou
 from PyQt6 import QtCore, QtGui, QtWidgets
 from PyQt6.QtCore import QSize, Qt
 from PyQt6 import uic
-from window import Ui_DeepRockGalaticSaveEditor
+from window import Ui_DeepRockGalacticSaveEditor
 from PyQt6.QtWidgets import QFileDialog
 import modules
 from definitions import (GUID_RE, MAX_BADGES, PROMO_RANKS, RANK_TITLES, RESOURCE_GUIDS,
@@ -11,7 +11,7 @@ from definitions import (GUID_RE, MAX_BADGES, PROMO_RANKS, RANK_TITLES, RESOURCE
                                      XP_TABLE)
 from typing import Any
 
-class MainWindow(QtWidgets.QMainWindow, Ui_DeepRockGalaticSaveEditor):
+class MainWindow(QtWidgets.QMainWindow, Ui_DeepRockGalacticSaveEditor):
     def __init__(self, *args, obj=None, **kwargs):
         super(MainWindow, self).__init__(*args, **kwargs)
         self.setupUi(self)

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>DeepRockGalaticSaveEditor</class>
- <widget class="QMainWindow" name="DeepRockGalaticSaveEditor">
+ <class>DeepRockGalacticSaveEditor</class>
+ <widget class="QMainWindow" name="DeepRockGalacticSaveEditor">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -17,7 +17,7 @@
    </sizepolicy>
   </property>
   <property name="windowTitle">
-   <string>Deep Rock Galatic Save Editor</string>
+   <string>Deep Rock Galactic Save Editor</string>
   </property>
   <property name="windowIcon">
    <iconset resource="../res/icons.qrc">
@@ -310,7 +310,7 @@ border: 2px solid rgb(255, 156, 0);</string>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="start_page">
      <widget class="QLabel" name="label">
@@ -334,7 +334,7 @@ border: 2px solid rgb(255, 156, 0);</string>
        <string notr="true">color: rgb(255, 255, 255);</string>
       </property>
       <property name="text">
-       <string>Deep Rock Galatic Save Editor</string>
+       <string>Deep Rock Galactic Save Editor</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
