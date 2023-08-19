@@ -437,9 +437,9 @@ the same folder as the save file with the extension of .old</string>
      <widget class="QLabel" name="label_23">
       <property name="geometry">
        <rect>
-        <x>160</x>
+        <x>0</x>
         <y>130</y>
-        <width>681</width>
+        <width>991</width>
         <height>91</height>
        </rect>
       </property>
@@ -456,6 +456,9 @@ the same folder as the save file with the extension of .old</string>
       </property>
       <property name="text">
        <string>Click 'open file' to select your .sav file</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
       </property>
      </widget>
     </widget>
