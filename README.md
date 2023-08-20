@@ -58,7 +58,8 @@ python main.py
 - Once you finish editing, click the "save" button to save the changes.
 
 ## Known issues
-- None
+- None.
+
 If you encounter any issues, please report it in the [issues](https://github.com/WayneYellow/Deep-Rock-Galactic-Save-Editor/issues)
 
 ## License
