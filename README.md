@@ -33,7 +33,7 @@ git clone https://github.com/WayneYellow/Deep-Rock-Galactic-Save-Editor.git
 ```bash
 pip install -r requirements.txt
 ```
--switch to the directory
+- switch to the directory
 ```bash
 cd ./src
 ```
