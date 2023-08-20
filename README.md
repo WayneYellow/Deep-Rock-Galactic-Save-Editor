@@ -55,7 +55,7 @@ python main.py
 - use the editor to edit the save file
 ![editor](assets/image-1.png)
 ### 3. Save changes
-- Once you finish editing, click the "save file" button to save the changes.
+- Once you finish editing, click the "save" button to save the changes.
 
 ## Known issues
 - None
