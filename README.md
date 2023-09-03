@@ -18,7 +18,7 @@ Deep Rock Galactic Save Editor is a tool for editing save files of the game Deep
 Two setup methods are provided:
 ### 1. release executable(recommended):
 This is a quick and easy way to use the editor. Good for users who don't have Python installed.
-- Download the .zip file from the [releases](https://github.com/WayneYellow/Deep-Rock-Galactic-Save-Editor/releases/tag/v1.0.0)
+- Download the .zip file from the [releases](https://github.com/WayneYellow/Deep-Rock-Galactic-Save-Editor/releases)
 - Extract the .zip file
 - Run the .exe file (Deep-Rock-Galactic-Save-Editor-1.0.0.exe)
 - you should be able to use it now, for usage guide, see [Usage](#usage)
@@ -33,7 +33,7 @@ git clone https://github.com/WayneYellow/Deep-Rock-Galactic-Save-Editor.git
 ```bash
 pip install -r requirements.txt
 ```
--switch to the directory
+- switch to the directory
 ```bash
 cd ./src
 ```
@@ -55,10 +55,11 @@ python main.py
 - use the editor to edit the save file
 ![editor](assets/image-1.png)
 ### 3. Save changes
-- Once you finish editing, click the "save file" button to save the changes.
+- Once you finish editing, click the "save" button to save the changes.
 
 ## Known issues
-- None
+- None.
+
 If you encounter any issues, please report it in the [issues](https://github.com/WayneYellow/Deep-Rock-Galactic-Save-Editor/issues)
 
 ## License
