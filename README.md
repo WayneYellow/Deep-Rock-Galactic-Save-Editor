@@ -20,7 +20,7 @@ Two setup methods are provided:
 This is a quick and easy way to use the editor. Good for users who don't have Python installed.
 - Download the .zip file from the [releases](https://github.com/WayneYellow/Deep-Rock-Galactic-Save-Editor/releases)
 - Extract the .zip file
-- Run the .exe file (Deep-Rock-Galactic-Save-Editor-1.0.0.exe)
+- Run the .exe file (Deep-Rock-Galactic-Save-Editor-1.0.2.exe)
 - you should be able to use it now, for usage guide, see [Usage](#usage)
 
 ### 2. running source code:
