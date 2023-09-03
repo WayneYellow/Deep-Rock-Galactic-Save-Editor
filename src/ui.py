@@ -107,6 +107,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_DeepRockGalacticSaveEditor):
         #tempery disable save button
         self.save_button.setEnabled(False)
 
+        self.seasonLvlBox.setMaximum(999)
         
         self.scrollArea.setStyleSheet(stylesheet)
         self.scrollArea_3.setStyleSheet(stylesheet)
@@ -252,50 +253,58 @@ class MainWindow(QtWidgets.QMainWindow, Ui_DeepRockGalacticSaveEditor):
             lv = self.engineer_lvl.value()
             xp = self.engineer_xp.value()
             promo = self.engineer_promotion.currentIndex()
-            if(lv < 0):
+            if(lv <= 0):
                 self.engineer_lvl.setValue(0)
-            elif(lv > 25):
+            elif(lv >= 25):
                 self.engineer_lvl.setValue(25)
-            if(xp < 0):
                 self.engineer_xp.setValue(0)
-            elif(xp >= XP_TABLE[lv] - XP_TABLE[lv-1]):
-                self.engineer_xp.setValue(XP_TABLE[lv]-XP_TABLE[lv-1]-1)
+            else:
+                if(xp <= 0):
+                    self.engineer_xp.setValue(0)
+                elif(xp >= XP_TABLE[lv] - XP_TABLE[lv-1]):
+                    self.engineer_xp.setValue(XP_TABLE[lv]-XP_TABLE[lv-1]-1)
         elif(self.sender().objectName().startswith('driller')):
             lv = self.driller_lvl.value()
             xp = self.driller_xp.value()
             promo = self.driller_promotion.currentIndex()
-            if(lv < 0):
+            if(lv <= 0):
                 self.driller_lvl.setValue(0)
-            elif(lv > 25):
+            elif(lv >= 25):
                 self.driller_lvl.setValue(25)
-            if(xp < 0):
                 self.driller_xp.setValue(0)
-            elif(xp >= XP_TABLE[lv] - XP_TABLE[lv-1]):
-                self.driller_xp.setValue(XP_TABLE[lv]-XP_TABLE[lv-1]-1)
+            else:
+                if(xp <= 0):
+                    self.driller_xp.setValue(0)
+                elif(xp >= XP_TABLE[lv] - XP_TABLE[lv-1]):
+                    self.driller_xp.setValue(XP_TABLE[lv]-XP_TABLE[lv-1]-1)
         elif(self.sender().objectName().startswith('gunner')):
             lv = self.gunner_lvl.value()
             xp = self.gunner_xp.value()
             promo = self.gunner_promotion.currentIndex()
-            if(lv < 0):
+            if(lv <= 0):
                 self.gunner_lvl.setValue(0)
-            elif(lv > 25):
+            elif(lv >= 25):
                 self.gunner_lvl.setValue(25)
-            if(xp < 0):
                 self.gunner_xp.setValue(0)
-            elif(xp >= XP_TABLE[lv] - XP_TABLE[lv-1]):
-                self.gunner_xp.setValue(XP_TABLE[lv]-XP_TABLE[lv-1]-1)
+            else:
+                if(xp <= 0):
+                    self.gunner_xp.setValue(0)
+                elif(xp >= XP_TABLE[lv] - XP_TABLE[lv-1]):
+                    self.gunner_xp.setValue(XP_TABLE[lv]-XP_TABLE[lv-1]-1)
         elif(self.sender().objectName().startswith('scout')):
             lv = self.scout_lvl.value()
             xp = self.scout_xp.value()
             promo = self.scout_promotion.currentIndex()
-            if(lv < 0):
+            if(lv <= 0):
                 self.scout_lvl.setValue(0)
-            elif(lv > 25):
+            elif(lv >= 25):
                 self.scout_lvl.setValue(25)
-            if(xp < 0):
                 self.scout_xp.setValue(0)
-            elif(xp >= XP_TABLE[lv] - XP_TABLE[lv-1]):
-                self.scout_xp.setValue(XP_TABLE[lv]-XP_TABLE[lv-1]-1)
+            else:
+                if(xp <= 0):
+                    self.scout_xp.setValue(0)
+                elif(xp >= XP_TABLE[lv] - XP_TABLE[lv-1]):
+                    self.scout_xp.setValue(XP_TABLE[lv]-XP_TABLE[lv-1]-1)
 
     def open_file(self):
         steam_path = modules.findSteamPath()
