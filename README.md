@@ -58,7 +58,7 @@ python main.py
 - Once you finish editing, click the "save" button to save the changes.
 
 ## Known issues
-- None.
+- 2024/06/12:The game seems to have changed some of the backup mechanics, therefore the modifier is currently unavailable. [issue#3](https://github.com/WayneYellow/Deep-Rock-Galactic-Save-Editor/issues/3)
 
 If you encounter any issues, please report it in the [issues](https://github.com/WayneYellow/Deep-Rock-Galactic-Save-Editor/issues)
 
